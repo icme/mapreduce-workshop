@@ -40,7 +40,7 @@ os.system(copy_cmd)
 
 test_cmd = 'dumbo start speed_test.py \
 -mat Simple_1M.tmat -output small_matrix_test_%d \
--use_system_numpy -hadoop nersc' % test_type
+-use_system_numpy -test_type %d -hadoop icme' % (test_type, test_type)
 
 t0 = time.time()
 os.system(test_cmd)

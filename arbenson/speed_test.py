@@ -14,8 +14,8 @@ gopts = util.GlobalOptions()
 class ManySmallMatrices(dumbo.backends.common.MapRedBase):
     def __init__(self, test_type):
         self.test_type = test_type
-        self.n = 40
-        self.iterations = 1
+        self.n = 10
+        self.iterations = 10
 
     def __call__(self, data):
         for key, value in data:
